@@ -1,3 +1,5 @@
+*forked to patch handling of international urls*
+
 Django Google Analytics
 =======================
 **Django Google Analytics brings the power of server side/non-js Google Analytics to your Django projects**
