@@ -12,7 +12,7 @@ def read(*parts):
 
 
 setup(
-    name='django-google-analytics-international-app',
+    name='django-ga-intl-app',
     version='4.3.0',
     description=('Django Google Analytics app allowing for server side/non-js (fork with international url support)'
                  'tracking.'),
