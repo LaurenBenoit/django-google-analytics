@@ -14,13 +14,13 @@ def read(*parts):
 setup(
     name='django-google-analytics-international-app',
     version='4.3.0',
-    description=('Django Google Analytics app allowing for server side/non-js '
+    description=('Django Google Analytics app allowing for server side/non-js (fork with international url support)'
                  'tracking.'),
     long_description=read('README.rst'),
     author='Praekelt.org',
     author_email='dev@praekelt.org',
     license='BSD',
-    url='http://github.com/praekelt/django-google-analytics',
+    url='https://github.com/LaurenBenoit/django-google-analytics-international.git',
     packages=find_packages(),
     install_requires=[
         'django<2.0',
