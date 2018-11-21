@@ -9,7 +9,7 @@ register = template.Library()
 
 
 @register.simple_tag(takes_context=True)
-def google_analytics(context, tracking_code=None, debug=False):
+def google_analytics(context, uid=None, tracking_code=None, debug=False):
     if not tracking_code:
         try:
             assert settings.GOOGLE_ANALYTICS['google_analytics_id']
@@ -28,6 +28,7 @@ def google_analytics(context, tracking_code=None, debug=False):
             params[param] = value
     # pass on the referer if present
     referer = request.META.get('HTTP_REFERER', None)
+    params.update({'uid': uid})
     if referer:
         params['r'] = referer
     # remove collected parameters from the path and pass it on

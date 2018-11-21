@@ -54,7 +54,7 @@ def build_ga_params(
         request, account, path=None, event=None, referer=None, title=None,
         user_id=None, custom_params={}):
     meta = request.META
-    # determine the domian
+    # determine the domain
     domain = meta.get('HTTP_HOST', '')
 
     # determine the referrer

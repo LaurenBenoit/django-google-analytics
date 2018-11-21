@@ -32,7 +32,8 @@ def google_analytics_request(request, response, path=None, event=None):
     # get the account id
     account = request.GET.get('tracking_code')
 
-    params = build_ga_params(request, account, event=event)
+    user_id = request.GET.get('uid')
+    params = build_ga_params(request, account, user_id=user_id, event=event)
 
     set_cookie(params, response)
 

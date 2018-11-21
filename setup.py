@@ -13,8 +13,8 @@ def read(*parts):
 
 setup(
     name='django-ga-intl-app',
-    version='4.3.0',
-    description=('Django Google Analytics app allowing for server side/non-js (fork with international url support)'
+    version='4.3.1',
+    description=('Django Google Analytics app allowing for server side/non-js (fork with international url support and User id tracking)'
                  'tracking.'),
     long_description=read('README.rst'),
     author='Praekelt.org',
