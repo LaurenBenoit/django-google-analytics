@@ -1,6 +1,11 @@
 Changelog
 =========
 
+
+4.3.1
+----------
+#. Add user_id to build_ga_params
+
 4.3.0
 ----------
 #. Add custom parameters to build_ga_params
